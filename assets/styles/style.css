@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: blueviolet;
+}
+
+.container {
+  width: 450px;
+  background: #fff;
+  border-radius: 6px;
+}
+.container h2 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding: 1rem 1.15rem;
+  border-bottom: 1px solid #d4dbe5;
+}
+.container .wrapper {
+  margin: 1.25rem 1.75rem;
+}
+.container .wrapper .input-box {
+  position: relative;
+}
+.container .wrapper .input-box input {
+  width: 100%;
+  height: 54px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+  padding: 0 2.8rem 0 1rem;
+  background: none;
+  color: #000;
+  letter-spacing: 1.4px;
+}
+.container .wrapper .input-box span {
+  position: absolute;
+  right: 13px;
+  cursor: pointer;
+  line-height: 53px;
+  color: #707070;
+}
+.container .wrapper .pass-indicator {
+  width: 100%;
+  height: 4px;
+  position: relative;
+  background: #dfdfdf;
+  margin-top: 0.75rem;
+  border-radius: 25px;
+}
+.container .wrapper .pass-indicator::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  border-radius: inherit;
+  background: #f1c80b;
+  transition: width 0.3s ease;
+}
+.container .wrapper .pass-indicator#weak::before {
+  width: 20%;
+  background: #e64a4a;
+}
+.container .wrapper .pass-indicator#medium::before {
+  width: 50%;
+  background: #f1c80b;
+}
+.container .wrapper .pass-indicator#strong::before {
+  width: 100%;
+  background: #4285f4;
+}
+.container .wrapper .pass-length {
+  margin: 1.57rem 0 1.23rem;
+}
+.container .wrapper .pass-length .details {
+  display: flex;
+  justify-content: space-between;
+}
+.container .wrapper .pass-length input {
+  width: 100%;
+  height: 5px;
+}
+.container .wrapper .pass-settings .options {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.container .wrapper .pass-settings .options .option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 50%;
+}
+.container .wrapper .pass-settings .options .option:first-child {
+  pointer-events: none;
+}
+.container .wrapper .pass-settings .options .option:first-child input {
+  opacity: 0.7;
+}
+.container .wrapper .pass-settings .options .option input {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+}
+.container .wrapper .pass-settings .options .option label {
+  cursor: pointer;
+  padding-left: 0.6rem;
+}
+.container .wrapper .generate-btn {
+  width: 100%;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: blueviolet;
+  font-size: 1.06rem;
+  padding: 0.9rem 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin: 0.9rem 0 1.3rem;
+}/*# sourceMappingURL=style.css.map */
